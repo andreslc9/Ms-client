@@ -1,0 +1,15 @@
+[run]
+# Omite la cobertura de estos archivos
+omit =
+    */routes.py
+    */__init__.py
+    */config.py
+    */conftest.py
+
+[report]
+# Opcional: puedes ajustar las reglas de informe, por ejemplo, excluir líneas de código específicas
+exclude_lines =
+    # Excluir líneas que no deben contar en la cobertura
+    pragma: no cover
+    # Excluir bloques como "__name__ == '__main__'"
+    if __name__ == .__main__.:
